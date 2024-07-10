@@ -1,3 +1,4 @@
+import '../Island/islandmain.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -91,104 +92,110 @@ class _HomePageWidgetState extends State<HomePageWidget>
           top: true,
           child: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
-            child: Column(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(14.0),
-                    child: Image.network(
-                      'https://images.unsplash.com/photo-1634148551170-d37d021e0cc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxNXx8ZHViYWl8ZW58MHx8fHwxNzIwNTUzMTc2fDA&ixlib=rb-4.0.3&q=80&w=1080',
-                      width: double.infinity,
-                      height: 200.0,
-                      fit: BoxFit.cover,
-                    ),
-                  ).animateOnPageLoad(
-                      animationsMap['imageOnPageLoadAnimation']!),
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Welcome to ',
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Noto Sans',
-                              color: FlutterFlowTheme.of(context).alternate,
-                              fontSize: 18.0,
-                              letterSpacing: 0.0,
-                              fontWeight: FontWeight.normal,
-                            ),
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(14.0),
+                      child: Image.network(
+                        'https://images.unsplash.com/photo-1634148551170-d37d021e0cc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxNXx8ZHViYWl8ZW58MHx8fHwxNzIwNTUzMTc2fDA&ixlib=rb-4.0.3&q=80&w=1080',
+                        width: double.infinity,
+                        height: 200.0,
+                        fit: BoxFit.cover,
                       ),
-                      Text(
-                        'Dubai',
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Readex Pro',
-                              color: FlutterFlowTheme.of(context).alternate,
-                              fontSize: 18.0,
-                              letterSpacing: 0.0,
-                              fontWeight: FontWeight.bold,
-                            ),
-                      ),
-                    ],
-                  ).animateOnPageLoad(animationsMap['rowOnPageLoadAnimation']!),
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 20.0, 0.0),
-                  child: Text(
-                    'Visiting Dubai offers a glimpse into a world of luxury and opulence, where towering skyscrapers like the Burj Khalifa pierce the sky and futuristic attractions like the Palm Jumeirah amaze tourists. Explore the traditional souks filled with spices, textiles, and gold, or indulge in a shopping spree at the world-class malls. Enjoy the thrill of desert safaris, camel rides, and dune bashing adventures. Sample the diverse culinary delights from around the globe, or unwind at luxurious beach resorts. Dubai\'s vibrant nightlife, cultural festivals, and iconic landmarks make it a truly unforgettable destination for any traveler seeking a unique and unforgettable experience.',
-                    textAlign: TextAlign.justify,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Yrsa',
-                          color: FlutterFlowTheme.of(context).secondary,
-                          fontSize: 18.0,
-                          letterSpacing: 0.0,
-                        ),
-                  ).animateOnPageLoad(
-                      animationsMap['textOnPageLoadAnimation']!),
-                ),
-                SizedBox(
-                  width: 70.0,
-                  child: Divider(
-                    thickness: 1.0,
-                    color: Color(0xFFF5CA0B),
+                    ).animateOnPageLoad(
+                        animationsMap['imageOnPageLoadAnimation']!),
                   ),
-                ),
-                Padding(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
-                  child: FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
-                    },
-                    text: 'Explore The Match',
-                    options: FFButtonOptions(
-                      width: double.infinity,
-                      height: 40.0,
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFFEB09C2),
-                      textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Welcome to ',
+                          style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                fontFamily: 'Noto Sans',
+                                color: FlutterFlowTheme.of(context).alternate,
+                                fontSize: 18.0,
+                                letterSpacing: 0.0,
+                                fontWeight: FontWeight.normal,
+                              ),
+                        ),
+                        Text(
+                          'Dubai',
+                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                 fontFamily: 'Readex Pro',
                                 color: FlutterFlowTheme.of(context).alternate,
+                                fontSize: 18.0,
                                 letterSpacing: 0.0,
+                                fontWeight: FontWeight.bold,
                               ),
-                      elevation: 3.0,
-                      borderSide: BorderSide(
-                        color: Colors.transparent,
-                        width: 1.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
+                        ),
+                      ],
+                    ).animateOnPageLoad(animationsMap['rowOnPageLoadAnimation']!),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 20.0, 0.0),
+                    child: Text(
+                      'Visiting Dubai offers a glimpse into a world of luxury and opulence, where towering skyscrapers like the Burj Khalifa pierce the sky and futuristic attractions like the Palm Jumeirah amaze tourists. Explore the traditional souks filled with spices, textiles, and gold, or indulge in a shopping spree at the world-class malls. Enjoy the thrill of desert safaris, camel rides, and dune bashing adventures. Sample the diverse culinary delights from around the globe, or unwind at luxurious beach resorts. Dubai\'s vibrant nightlife, cultural festivals, and iconic landmarks make it a truly unforgettable destination for any traveler seeking a unique and unforgettable experience.',
+                      textAlign: TextAlign.justify,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Yrsa',
+                            color: FlutterFlowTheme.of(context).secondary,
+                            fontSize: 18.0,
+                            letterSpacing: 0.0,
+                          ),
+                    ).animateOnPageLoad(
+                        animationsMap['textOnPageLoadAnimation']!),
+                  ),
+                  SizedBox(
+                    width: 70.0,
+                    child: Divider(
+                      thickness: 1.0,
+                      color: Color(0xFFF5CA0B),
                     ),
                   ),
-                ),
-              ],
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
+                    child: FFButtonWidget(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ScoreboardPage()),
+                        );
+                        print('Button pressed ...');
+                      },
+                      text: 'Explore The Match',
+                      options: FFButtonOptions(
+                        width: double.infinity,
+                        height: 40.0,
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: Color(0xFFEB09C2),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  fontFamily: 'Readex Pro',
+                                  color: FlutterFlowTheme.of(context).alternate,
+                                  letterSpacing: 0.0,
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
+                        ),
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
