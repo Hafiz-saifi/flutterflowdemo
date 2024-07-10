@@ -66,9 +66,9 @@ class _ScoreboardPageState extends State<ScoreboardPage> {
       backgroundColor: Colors.redAccent.shade400,
       body: Center(
         child:
-        // teamResponse == null
-        //     ? const CircularProgressIndicator()
-        //     :
+        teamResponse == null
+            ? const CircularProgressIndicator()
+            :
         ScoreboardWidget(teamResponse: teamResponse!),
       ),
     );

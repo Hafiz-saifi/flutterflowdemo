@@ -61,6 +61,7 @@ dependencies:
   flutter_launcher_icons: ^0.13.1
   live_activities: ^1.9.3
   workmanager: ^0.5.2
+  app_group_directory: ^2.0.0
 
   #------Icon of App-----#
 flutter_icons:
