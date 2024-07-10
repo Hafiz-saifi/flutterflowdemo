@@ -65,9 +65,11 @@ class _ScoreboardPageState extends State<ScoreboardPage> {
     return Scaffold(
       backgroundColor: Colors.redAccent.shade400,
       body: Center(
-        child: teamResponse == null
-            ? const CircularProgressIndicator()
-            : ScoreboardWidget(teamResponse: teamResponse!),
+        child:
+        // teamResponse == null
+        //     ? const CircularProgressIndicator()
+        //     :
+        ScoreboardWidget(teamResponse: teamResponse!),
       ),
     );
   }
